@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed353f00-1674-47e0-aca5-4df3c01b37b1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-02-28-second-post.md" afterPath="$PROJECT_DIR$/_posts/2015-02-28-second-post.md" />
     </list>
     <ignored path="blog.iws" />
@@ -49,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-02-28-second-post.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2015-02-28-second-post.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2015-02-28-second-post.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="61" selection-start="441" selection-end="441" vertical-scroll-proportion="0.38928068">
+            <state line="16" column="0" selection-start="251" selection-end="347" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -76,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="2" column="9" selection-start="23" selection-end="23" vertical-scroll-proportion="0.033850495">
               <folding />
             </state>
           </provider>
@@ -124,6 +125,7 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/_posts/2015-02-28-second-post.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -375,13 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -452,7 +447,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-02-28-second-post.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="61" selection-start="441" selection-end="441" vertical-scroll-proportion="0.38928068">
+        <state line="16" column="0" selection-start="251" selection-end="347" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="9" selection-start="23" selection-end="23" vertical-scroll-proportion="0.033850495">
           <folding />
         </state>
       </provider>
