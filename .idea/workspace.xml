@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ed353f00-1674-47e0-aca5-4df3c01b37b1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-02-28-second-post.md" afterPath="$PROJECT_DIR$/_posts/2015-02-28-second-post.md" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
