@@ -14,7 +14,7 @@ title: 第二篇测试文v4
 
 测试三，一段js代码能否解析
 
-'''javascript
+```javascript 
 var str = "welcome to my blog"
 document.getElementById("my").innerHTML = str;
 
