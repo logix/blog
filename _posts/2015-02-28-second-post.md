@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 第二篇测试文v2
+title: 第二篇测试文v4
 ---
 
 {{ page.title }}
@@ -12,6 +12,15 @@ title: 第二篇测试文v2
 
 测试二，我要知道post.url的结构，所以输出它： `{{ page.url }}`
 
+测试三，一段js代码能否解析
 
+'''javascript
+var str = "welcome to my blog"
+document.getElementById("my").innerHTML = str;
+
+
+测试四，建立CSS和assets目录，并解析一张目录下的图片
+
+![我的照片]({{ site.baseurl }}/assets/author.jpeg)
 
 [我的博客]({{ site.baseurl }})
