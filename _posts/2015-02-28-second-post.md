@@ -14,4 +14,4 @@ title: 第二篇测试文v2
 
 
 
-[我的博客](http://{{ site.baseurl }})
+[我的博客]({{ site.baseurl }})
