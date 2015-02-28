@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed353f00-1674-47e0-aca5-4df3c01b37b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-02-28-second-post.md" afterPath="$PROJECT_DIR$/_posts/2015-02-28-second-post.md" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +52,7 @@
       <file leaf-file-name="2015-02-28-second-post.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2015-02-28-second-post.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="14" selection-start="265" selection-end="265" vertical-scroll-proportion="0.27080396">
+            <state line="23" column="61" selection-start="441" selection-end="441" vertical-scroll-proportion="0.38928068">
               <folding />
             </state>
           </provider>
@@ -452,7 +452,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-02-28-second-post.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="14" selection-start="265" selection-end="265" vertical-scroll-proportion="0.27080396">
+        <state line="23" column="61" selection-start="441" selection-end="441" vertical-scroll-proportion="0.38928068">
           <folding />
         </state>
       </provider>
