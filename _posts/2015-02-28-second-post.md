@@ -17,7 +17,7 @@ tags:jekyll
 测试三，一段js代码能否解析
 
 ```javascript
-var str = "use ```lang to transform code format";
+var str = "use lang to transform code format";
 for(var i =0; i<5; i++) str += ","+i;
 ```
 
