@@ -2,7 +2,8 @@
 layout: default
 title: 第二篇测试文v4
 category: test
-tags:jekyll
+tags:
+- jekyll
 ---
 
 {{ page.title }}

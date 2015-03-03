@@ -2,7 +2,8 @@
 layout: default
 title: 你好 , Logix的博客
 category: plan
-tags:blog
+tags:
+- blog
 ---
 
 {{ page.title }}
