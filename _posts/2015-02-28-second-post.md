@@ -26,7 +26,7 @@ var str = "welcome to my blog";
 document.getElementById("my").innerHTML = str;
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def show
   @widget = Widget(params[:id])
   respond_to do |format|

@@ -32,19 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-02-28-second-post.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2015-02-28-second-post.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2015-02-28-second-post.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="37" selection-start="377" selection-end="377" vertical-scroll-proportion="0.33850494">
+            <state line="28" column="25" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_config.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="14" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
+            <state line="6" column="15" selection-start="134" selection-end="134" vertical-scroll-proportion="0.10155148">
               <folding />
             </state>
           </provider>
@@ -136,8 +136,8 @@
         <option value="$PROJECT_DIR$/_posts/2015-02-27-hello-world.md" />
         <option value="$PROJECT_DIR$/_posts/2015-03-01-test-3.md" />
         <option value="$PROJECT_DIR$/_posts/2015-03-01-test-4.md" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2015-02-28-second-post.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -465,16 +465,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_posts/2015-02-28-second-post.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="14" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
+        <state line="28" column="25" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2015-02-28-second-post.md">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="37" selection-start="377" selection-end="377" vertical-scroll-proportion="0.33850494">
+        <state line="6" column="15" selection-start="134" selection-end="134" vertical-scroll-proportion="0.10155148">
           <folding />
         </state>
       </provider>
