@@ -1,6 +1,8 @@
 ---
 layout: default
 title: 第二篇测试文v4
+category: 技术
+tags:jekyll
 ---
 
 {{ page.title }}
@@ -14,10 +16,10 @@ title: 第二篇测试文v4
 
 测试三，一段js代码能否解析
 
-```javascript
+{% highlight javascript %}
 var str = "welcome to my blog";
 document.getElementById("my").innerHTML = str;
-```
+{% endhighlight %}
 
 测试四，建立CSS和assets目录，并解析一张目录下的图片
 
