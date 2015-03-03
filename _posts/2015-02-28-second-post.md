@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 第二篇测试文v4
-#category: 技术
-#tags:jekyll
+category: test
+tags:jekyll
 ---
 
 {{ page.title }}

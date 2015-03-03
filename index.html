@@ -9,5 +9,11 @@ title: Logix's blog
     {% for post in site.posts %}
         <li>{{ post.date | date_to_string }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </li>
     {% endfor %}
+</ul>
 
+<p>类别</p>
+<ul>
+    {% for category in site.categories %}
+    <li>{{ category | first }}({{ category | last | size }})</li>
+    {% endfor %}
 </ul>
