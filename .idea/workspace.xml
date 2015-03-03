@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed353f00-1674-47e0-aca5-4df3c01b37b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-02-27-hello-world.md" afterPath="$PROJECT_DIR$/_posts/2015-02-27-hello-world.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-02-28-second-post.md" afterPath="$PROJECT_DIR$/_posts/2015-02-28-second-post.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +25,7 @@
       <file leaf-file-name="2015-02-27-hello-world.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2015-02-27-hello-world.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="6" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="56" selection-end="68" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -59,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-03-01-test-3.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2015-03-01-test-3.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2015-03-01-test-3.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="77" selection-end="91" vertical-scroll-proportion="0.05077574">
+            <state line="3" column="0" selection-start="77" selection-end="91" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="5" selection-start="248" selection-end="248" vertical-scroll-proportion="-6.285714">
+            <state line="16" column="37" selection-start="261" selection-end="261" vertical-scroll-proportion="0.27906978">
               <folding />
             </state>
           </provider>
@@ -133,13 +132,13 @@
         <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/css/syntax.css" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2015-03-01-test-3.md" />
         <option value="$PROJECT_DIR$/_posts/2015-03-01-test-4.md" />
         <option value="$PROJECT_DIR$/_posts/2015-03-01-test-5.md" />
         <option value="$PROJECT_DIR$/_posts/2015-02-27-hello-world.md" />
         <option value="$PROJECT_DIR$/_posts/2015-02-28-second-post.md" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -434,13 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="248" selection-end="248" vertical-scroll-proportion="-6.285714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-03-01-test-5.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="14" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
@@ -462,13 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2015-02-27-hello-world.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-02-28-second-post.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="2" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
@@ -478,7 +463,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-03-01-test-3.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="77" selection-end="91" vertical-scroll-proportion="0.05077574">
+        <state line="3" column="0" selection-start="77" selection-end="91" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-02-27-hello-world.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="56" selection-end="68" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="37" selection-start="261" selection-end="261" vertical-scroll-proportion="0.27906978">
           <folding />
         </state>
       </provider>
