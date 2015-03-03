@@ -21,6 +21,17 @@ var str = "welcome to my blog";
 document.getElementById("my").innerHTML = str;
 {% endhighlight %}
 
+{% highlight ruby %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}
+
+
 测试四，建立CSS和assets目录，并解析一张目录下的图片
 
 ![author]({{ site.baseurl }}/assets/author.jpeg "It's me :)")
