@@ -16,6 +16,11 @@ tags:jekyll
 
 测试三，一段js代码能否解析
 
+'''javascript
+var str = "use '''lang to transform code format";
+for(var i =0; i<5; i++) str += ","+i;
+'''
+
 {% highlight javascript %}
 var str = "welcome to my blog";
 document.getElementById("my").innerHTML = str;

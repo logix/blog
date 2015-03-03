@@ -1,5 +1,7 @@
 baseurl: http://www.o2ozj.com
 safe: false
+markdown: rdiscount
+pygments: true
 
 name: Logix's Blog
 desc: 茫茫人生，好像荒野
