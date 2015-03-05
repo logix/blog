@@ -13,13 +13,18 @@ title: Logix's blog
 </ul>
 
 <p>标签</p>
+<ul>
 {% for tag in site.tags %}
     <li><a href="/show_by_tag.html?tag={{ tag[0] }}"> {{ tag[0] }}</a></li>
 {% endfor %}
+</ul>
 
 <P>测试标签变量site.tags.name</P>
-{{ site.tags.blog }}
-
+<ul>
+{% for post in site.tags.blog %}
+    <li>{{ post.date | date_to_string }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
 
 <p>最新文章列表</p>
 <ul>
