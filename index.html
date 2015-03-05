@@ -14,8 +14,11 @@ title: Logix's blog
 
 <p>标签</p>
 {% for tag in site.tags %}
-    <a href="/show_by_tag.html?tag={{ tag[0] }}"> {{ tag[0] }}</a>
+    <li><a href="/show_by_tag.html?tag={{ tag[0] }}"> {{ tag[0] }}</a></li>
 {% endfor %}
+
+<P>测试标签变量site.tags.name</P>
+{{ site.tags.blog }}
 
 
 <p>最新文章列表</p>

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed353f00-1674-47e0-aca5-4df3c01b37b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="blog.iws" />
@@ -35,7 +34,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="66" selection-start="308" selection-end="308" vertical-scroll-proportion="0.27906978">
+            <state line="19" column="23" selection-start="355" selection-end="355" vertical-scroll-proportion="0.33139536">
               <folding />
             </state>
           </provider>
@@ -457,7 +456,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="66" selection-start="308" selection-end="308" vertical-scroll-proportion="0.27906978">
+        <state line="19" column="23" selection-start="355" selection-end="355" vertical-scroll-proportion="0.33139536">
           <folding />
         </state>
       </provider>
