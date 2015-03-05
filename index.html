@@ -12,6 +12,12 @@ title: Logix's blog
     {% endfor %}
 </ul>
 
+<p>标签</p>
+{% for tag in site.tags %}
+    <a href="/show_by_tag.html?tag={{ tag[0] }}"> {{ tag[0] }}</a>
+{% endfor %}
+
+
 <p>最新文章列表</p>
 <ul>
     {% for post in paginator.posts %}
