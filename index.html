@@ -3,59 +3,84 @@ layout: default
 title: Logix's blog
 ---
 
-<h2>首页</h2>
+<div class="main">
 
-<p>类别</p>
-<ul>
-    {% for category in site.categories %}
-    <li>{{ category | first }}({{ category | last | size }})</li>
-    {% endfor %}
-</ul>
+    <section class="leftbox">
 
-<p>标签</p>
-<ul>
-{% for tag in site.tags %}
-    <li><a href="/show_by_tag.html?tag={{ tag[0] }}"> {{ tag[0] }}</a></li>
-{% endfor %}
-</ul>
+        <h2>首页</h2>
 
-<P>测试标签变量site.tags.name</P>
-<ul>
-{% for post in site.tags.blog %}
-    <li>{{ post.date | date_to_string }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+        <nav>
+            <span>类别:</span>
+            <ul class="ulbar">
+                {% for category in site.categories %}
+                <li><a href="#">{{ category | first }}({{ category | last | size }})</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
 
-<p>最新文章列表</p>
-<ul>
-    {% for post in paginator.posts %}
-        <li>{{ post.date | date_to_string }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </li>
-    {% endfor %}
-</ul>
+        <nav>
+            <span>标签:</span>
+            <ul class="ulbar">
+                {% for tag in site.tags %}
+                <li><a href="/show_by_tag.html?tag={{ tag[0] }}"> {{ tag[0] }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
 
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev</a>
-    {% else %}
-    <span>&laquo; Prev</span>
-    {% endif %}
 
-    {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-    <em>{{ page }}</em>
-    {% elsif page == 1 %}
-    <a href="{{ '/index.html' | replace: '//', '/' }}">{{ page }}</a>
-    {% else %}
-    <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-    {% endfor %}
+        <p>最新文章列表</p>
+        <ul>
+            {% for post in paginator.posts %}
+            <li>{{ post.date | date_to_string }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
 
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | replace: '//', '/' }}">Next &raquo;</a>
-    {% else %}
-    <span>Next &raquo;</span>
-    {% endif %}
+        {% if paginator.total_pages > 1 %}
+        <div class="pagination">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev</a>
+            {% else %}
+            <span>&laquo; Prev</span>
+            {% endif %}
+
+            {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+            <em>{{ page }}</em>
+            {% elsif page == 1 %}
+            <a href="{{ '/index.html' | replace: '//', '/' }}">{{ page }}</a>
+            {% else %}
+            <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+            {% endif %}
+            {% endfor %}
+
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | replace: '//', '/' }}">Next &raquo;</a>
+            {% else %}
+            <span>Next &raquo;</span>
+            {% endif %}
+        </div>
+        {% endif %}
+
+
+        <!--<P>测试标签变量site.tags.name</P>-->
+        <p>测试文章列表</p>
+        <ul>
+            {% for post in site.tags.blog %}
+            <li>{{ post.date | date_to_string }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+
+    </section>
+
+
+    <aside class="rightbox">
+        <div class="myphoto">
+            <img src="{{ site.baseurl }}/assets/author.jpeg"/>
+            <p>Name:Logix</p>
+            <P>...</P>
+        </div>
+    </aside>
+
+    <div class="clear"></div>
+
 </div>
-{% endif %}
-

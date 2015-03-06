@@ -1,6 +1,93 @@
-h1 {
-    padding:5px;
-    color: #335734;
-    border-bottom:1px solid #394057;
+html {
+    color: #222;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    background-color: #fff;
+    overflow-y: scroll;
 }
 
+body {
+    margin: 0 auto;
+    max-width: 66%;
+}
+header h1 {
+    padding:10px;
+    color: #335734;
+    border-bottom:1px solid #394057;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+}
+
+.subtitle {
+    margin: 0 0 0 20px;
+    font-size: 0.3em;
+}
+
+
+.main {
+
+
+}
+
+.leftbox {
+    width: 66%;
+    box-sizing: border-box;
+    padding: 4px;
+    /*background-color: #e3d2d2;*/
+    float: left;
+}
+
+.rightbox {
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    box-sizing: border-box;
+    /*background-color: #aaffaa;*/
+    width: 34%;
+
+}
+
+
+nav{
+    margin: 10px 0 10px 0;
+}
+
+.ulbar {
+    width: 100%;
+    text-align: left;
+    display: inline;
+    padding: 3px;
+}
+
+.ulbar li {
+    min-width: 40px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    padding: 0 10px 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #0088cc;
+    border-radius: 5px;
+}
+
+.ulbar li a{
+    color: #ffffff;
+}
+
+.myphoto {
+    padding: 5px;
+    text-align: center;
+    line-height: 0.5em;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    border-top: 1px solid #394057;
+    position: relative;
+    width: 100%;
+    margin:15px 3px;
+    text-align: center;
+}
