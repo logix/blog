@@ -7,10 +7,14 @@ html {
     overflow-y: scroll;
 }
 
+::selection {background:#5bc0de; color:#fff; text-shadow: none;}
+::-moz-selection {background:#ff5e99; color:#fff; text-shadow: none;}
+
 body {
     margin: 0 auto;
     max-width: 66%;
 }
+
 header h1 {
     padding:10px;
     color: #335734;
@@ -19,8 +23,10 @@ header h1 {
 }
 
 .subtitle {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 15px;
     font-size: 0.3em;
+    position: relative;
+    top:5px;
 }
 
 
