@@ -3,84 +3,195 @@ layout: default
 title: Logix's blog
 ---
 
-<div class="main">
 
-    <section class="leftbox">
+<section class="leftbox">
 
-        <h2>首页</h2>
+    <h2>首页</h2>
 
-        <nav>
-            <span>类别:</span>
-            <ul class="ulbar">
-                {% for category in site.categories %}
-                <li><a href="#">{{ category | first }}({{ category | last | size }})</a></li>
-                {% endfor %}
-            </ul>
-        </nav>
-
-        <nav>
-            <span>标签:</span>
-            <ul class="ulbar">
-                {% for tag in site.tags %}
-                <li><a href="/show_by_tag.html?tag={{ tag[0] }}"> {{ tag[0] }}</a></li>
-                {% endfor %}
-            </ul>
-        </nav>
-
-
-        <p>最新文章列表</p>
-        <ul>
-            {% for post in paginator.posts %}
-            <li>{{ post.date | date_to_string }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    <nav>
+        <span>类别:</span>
+        <ul class="ulbar">
+            <li><a href="#" onclick="createAllList('',1);">All</a></li>
+            {% for category in site.categories %}
+            <li><a href="#" onclick="createListbycategory('{{ category[0] }}')">{{ category | first }}({{ category | last | size }})</a></li>
             {% endfor %}
         </ul>
+    </nav>
 
-        {% if paginator.total_pages > 1 %}
-        <div class="pagination">
-            {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev</a>
-            {% else %}
-            <span>&laquo; Prev</span>
-            {% endif %}
-
-            {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-            <em>{{ page }}</em>
-            {% elsif page == 1 %}
-            <a href="{{ '/index.html' | replace: '//', '/' }}">{{ page }}</a>
-            {% else %}
-            <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-            {% endif %}
+    <nav>
+        <span>标签:</span>
+        <ul class="ulbar">
+            {% for tag in site.tags %}
+            <li><a href="#" onclick="createListbyTag('{{ tag[0] }}')" > {{ tag[0] }}({{ tag | last | size }})</a></li>
             {% endfor %}
+        </ul>
+    </nav>
 
-            {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | replace: '//', '/' }}">Next &raquo;</a>
-            {% else %}
-            <span>Next &raquo;</span>
-            {% endif %}
-        </div>
+
+    <p>文章列表</p>
+    <ul>
+        {% for post in paginator.posts %}
+        <li>{{ post.date | date_to_string }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev</a>
+        {% else %}
+        <span>&laquo; Prev</span>
         {% endif %}
 
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <em>{{ page }}</em>
+        {% elsif page == 1 %}
+        <a href="{{ '/index.html' | replace: '//', '/' }}">{{ page }}</a>
+        {% else %}
+        <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+        {% endfor %}
 
-        <!--<P>测试标签变量site.tags.name</P>-->
-        <p>测试文章列表</p>
-        <ul>
-            {% for post in site.tags.blog %}
-            <li>{{ post.date | date_to_string }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
-
-    </section>
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | replace: '//', '/' }}">Next &raquo;</a>
+        {% else %}
+        <span>Next &raquo;</span>
+        {% endif %}
+    </div>
+    {% endif %}
 
 
-    <aside class="rightbox">
-        <div class="myphoto">
-            <img src="{{ site.baseurl }}/assets/author.jpeg"/>
-            <p>Name:Logix</p>
-            <P>...</P>
-        </div>
-    </aside>
+    <!--<P>测试标签变量site.tags.name</P>-->
+    <p>测试文章列表</p>
+    <ul>
+        {% for post in site.tags.blog %}
+        <li>{{ post.date | date_to_string }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
 
-    <div class="clear"></div>
+    <p>数据测试</p>
+    <ul id="article_list" >
 
-</div>
+    </ul>
+
+    <script lang="javascript">
+        var jsonTxt = '{ "articles" : [ '+
+                '{% for post in site.posts %} ' +
+                '{ "date":"{{ post.date | date_to_string }}" , "title":"{{ post.title }}" , ' +
+                '"url":"{{ post.url }}" , ' +
+                '"tags":"{{ post.tags }}" , "categories":"{{ post.categories }}" }, ' +
+                '{% endfor %}'+
+                ']}';
+        var jo = eval("(" + jsonTxt + ")");
+//        document.write(jo.articles[1].title.toString() + "x");
+//        console.log(jo);
+
+        createArticleList(jo.articles);
+
+
+        /**
+         * 生成文章列表
+         *
+         * @param obj Json Obj
+         * @param pageNum Int
+         * @param pageFunc String 分页时调用的参数名称
+         */
+        function createArticleList(obj, pageNum, pageFunc, keyword) {
+
+            pageNum = pageNum || 1;
+            pageFunc = pageFunc || "createAllList";
+
+            //这里很奇怪，当pagenate做全局变量的时候，obj.length/pagenate = NaN , 是否和模板有关系？再测试下
+            var pagenate = 3;
+            var isLast = false;
+
+            //清空列表栏
+            document.getElementById("article_list").innerHTML = "";
+
+            //分页计算
+//            document.write(Math.ceil(obj.length/pagenate));
+            var totalPageNum = 0;
+            totalPageNum = parseFloat(obj.length/pagenate);
+
+
+            for(var i = (pageNum-1) * pagenate; i< pageNum * pagenate; i++) {
+//                document.write(i);
+                if(i > obj.length -1 ) {
+                    isLast = true;
+                    break;
+                }
+
+                if(i < 0) i =0;
+
+                document.getElementById("article_list").innerHTML +=
+                        "<li>"+obj[i].date+" - <a href='{{ site.baseurl }}"+obj[i].url+"' >"
+                                +obj[i].title+"</a></li>";
+            }
+
+            if(obj.length <= pagenate) return;
+
+            var Prev = "<a href='#' onclick='"+pageFunc+"(\""+keyword+"\","+(pageNum-1)+")'>[Prev]</a>";
+            var Next = "<a href='#' onclick='"+pageFunc+"(\""+keyword+"\","+(pageNum+1)+")'>[Next]</a>";
+
+            if(pageNum == 1)
+                document.getElementById("article_list").innerHTML += Next;
+            else if(isLast)
+                document.getElementById("article_list").innerHTML += Prev;
+            else
+                document.getElementById("article_list").innerHTML += Prev+" "+Next;
+
+
+        }
+
+
+        function createAllList(keywordnull,pageNum){
+            createArticleList(jo.articles, pageNum);
+        }
+
+
+        function createListbyTag(tag,pageNum) {
+            var tmp_arr = [];
+            for(i in jo.articles) {
+                if(jo.articles[i].tags.indexOf(tag) >= 0) { // 等于0也是有的，indexOf若第一位匹配到就返回0，无匹配返回-1
+                    tmp_arr.push(jo.articles[i]);
+                }
+            }
+            if(tmp_arr.length > 0)
+                createArticleList(tmp_arr,pageNum,"createListbyTag",tag);
+            else
+                document.write("无此类文章");
+        }
+
+        function createListbycategory(category, pageNum) {
+            var tmp_arr = [];
+            for(i in jo.articles) {
+                if(jo.articles[i].categories.indexOf(category) >= 0) {
+                    tmp_arr.push(jo.articles[i]);
+                }
+            }
+            if(tmp_arr.length > 0)
+                createArticleList(tmp_arr,pageNum,"createListbycategory",category);
+            else
+                document.write("无此类文章");
+        }
+
+    </script>
+
+
+
+
+</section>
+
+
+<aside class="rightbox">
+    <div class="myphoto">
+        <img src="{{ site.baseurl }}/assets/author.jpeg"/>
+
+        <p>Name:Logix</p>
+
+        <P>...</P>
+    </div>
+</aside>
+
+<div class="clear"></div>
