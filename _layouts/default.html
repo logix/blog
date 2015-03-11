@@ -15,6 +15,16 @@
 {{ content }}
 </article>
 
+<p>相关阅读：</p>
+<ul>
+{% for post in site.related_posts %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+
+<a href="{{ site.baseurl }}">返回首页</a>
+
+
 {% include footer.html %}
 
 </body>
