@@ -11,9 +11,9 @@ title: Logix's blog
     <nav>
         <span>类别:</span>
         <ul class="ulbar">
-            <li><a href="#" onclick="createAllList('',1);">All</a></li>
+            <li class="litag"><a href="#" onclick="createAllList('',1);">All</a></li>
             {% for category in site.categories %}
-            <li><a href="#" onclick="createListbycategory('{{ category[0] }}')">{{ category | first }}({{ category | last | size }})</a></li>
+            <li class="litag"><a href="#" onclick="createListbycategory('{{ category[0] }}')">{{ category | first }}({{ category | last | size }})</a></li>
             {% endfor %}
         </ul>
     </nav>
