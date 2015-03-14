@@ -1,12 +1,10 @@
 baseurl: http://www.logix.top
-safe: false
-markdown: kramdown
+#safe: false
+#markdown: kramdown
 highlighter: pygments #pygments: true
 
 name: Logix's Blog
 desc: 茫茫人生，好像荒野
-
-paginate: 3
 
 category:
     plan: 计划

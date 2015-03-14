@@ -4,20 +4,6 @@
 //        console.log(jo);
 
 
-//标签颜色
-
-    var liTags = document.getElementsByClassName('litag');
-
-//liTags[1].setAttribute("class","tag_2");
-
-
-
-    for(var i =0; i<liTags.length; i++) {
-        liTags[i].setAttribute("class",'tag_3');
-    }
-
-
-
 
 //生成文章列表
 createArticleList(jo.articles);
@@ -64,8 +50,8 @@ function createArticleList(obj, pageNum, pageFunc, keyword) {
 
     if(obj.length <= pagenate) return;
 
-    var Prev = "<a class='pagimenu' href='#' onclick='"+pageFunc+"(\""+keyword+"\","+(pageNum-1)+")'>[Prev]</a>";
-    var Next = "<a class='pagimenu' href='#' onclick='"+pageFunc+"(\""+keyword+"\","+(pageNum+1)+")'>[Next]</a>";
+    var Prev = "<a class='pagimenu' href='#' onclick='"+pageFunc+"(\""+keyword+"\","+(pageNum-1)+")'>[ Prev ]</a>";
+    var Next = "<a class='pagimenu' href='#' onclick='"+pageFunc+"(\""+keyword+"\","+(pageNum+1)+")'>[ Next ]</a>";
 
     if(pageNum == 1)
         document.getElementById("article_list").innerHTML += "<div>"+Next+"</div>";
