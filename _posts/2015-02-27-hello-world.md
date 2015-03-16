@@ -1,13 +1,12 @@
 ---
-layout: default
+layout: post
 title: 你好 , Logix的博客
 category: plan
 tags:
 - blog
 ---
 
-{{ page.title }}
----
+
 
 欢迎来到这里，如果你看到这个页面，说明我已经成功使用了Jekyll在Github上搭建了自己的博客。
 

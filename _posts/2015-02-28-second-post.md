@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: post
 title: 第二篇测试文v4
 category: test
 tags:
 - jekyll
 ---
 
-{{ page.title }}
 
 
 这是第二篇文章，我增加了.gitigonre文件来过滤掉site目录的提交，测试github是否会生成新的blog文章。
