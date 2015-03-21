@@ -4,8 +4,10 @@ baseurl: http://www.logix.top
 highlighter: pygments #pygments: true
 
 name: Logix's Blog
-desc: 茫茫人生，好像荒野
+desc: 探寻开源的价值
 
-category:
-    plan: 计划
-    test: 测试
+permalink: /:year/:month/:day/:title.html
+
+#category:
+#    plan: 计划
+#    test: 测试

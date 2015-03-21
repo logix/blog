@@ -1,6 +1,12 @@
+/**
+ * -----------------
+ * 通用部分
+ * -----------------
+ */
+
 html {
     color: #222;
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: Georgia,serif,Helvetica,Arial,sans-serif;
     font-size: 16px;
     line-height: 19px;
     background-color: #fff;
@@ -11,22 +17,6 @@ html {
 
 ::selection {background:#5bc0de; color:#fff; text-shadow: none;}
 ::-moz-selection {background:#ff5e99; color:#fff; text-shadow: none;}
-
-@-webkit-keyframes listshow {
-    /*0% {color: green;}*/
-    /*50% { color: yellow}*/
-    /*100% {color: green}*/
-    0% {opacity: 0; left:-10px; top:0px;}
-    100% {opcity: 1; left:0px; top:0px;}
-}
-@-moz-keyframes transopacity {
-    0% {opacity: 0; left:-10px; top:0px;}
-    100% {opcity: 1; left:0px; top:0px;}
-}
-@-o-keyframes transopacity {
-    0% {opacity: 0; left:-10px; top:0px;}
-    100% {opcity: 1; left:0px; top:0px;}
-}
 
 body {
     margin: 0 auto;
@@ -58,12 +48,32 @@ header h1 a{
     font-size: 0.3em;
     position: relative;
     top:5px;
+    color: #888888;
+    left:10px;
 }
 
+.clear {
+    clear: both;
+}
+footer {
+    border-top: 1px solid #dcdcdc;
+    position: relative;
+    width: 100%;
+    margin:15px 3px;
+    text-align: center;
+}
+
+
+/**
+ * -----------------
+ * 首页专属
+ * -----------------
+ */
 
 #main {
     min-height: 360px;
     padding-top: 10px;
+
 }
 
 .leftbox {
@@ -81,9 +91,27 @@ header h1 a{
     /*background-color: #aaffaa;*/
     width: 34%;
     padding: 3px 3px;
+    font-size: 14px;
+    min-width: 240px;
+    max-width: 300px;
 
 }
 
+@-webkit-keyframes listshow {
+    /*0% {color: green;}*/
+    /*50% { color: yellow}*/
+    /*100% {color: green}*/
+    0% {opacity: 0; left:-10px; top:0px;}
+    100% {opcity: 1; left:0px; top:0px;}
+}
+@-moz-keyframes transopacity {
+    0% {opacity: 0; left:-10px; top:0px;}
+    100% {opcity: 1; left:0px; top:0px;}
+}
+@-o-keyframes transopacity {
+    0% {opacity: 0; left:-10px; top:0px;}
+    100% {opcity: 1; left:0px; top:0px;}
+}
 
 nav{
     margin: 10px 0 10px 0;
@@ -129,7 +157,6 @@ nav{
     color: #ffffff;
 }
 
-
 #article_list li , #article_list div {
     padding-bottom: 10px;
     position: relative;
@@ -155,23 +182,95 @@ nav{
 }
 
 .myphoto img {
+    padding: 10px 0;
     width:60%;
     height: auto;
 }
 
 .myintro {
     text-align: center;
-    text-indent:2em;
+    /*text-indent:2em;*/
 }
 
-.clear {
-    clear: both;
+.myintro p {
+    color: #888888;
 }
 
-footer {
-    border-top: 1px solid #dcdcdc;
-    position: relative;
+.wb {
+    width:100%;
+    padding: 10px 15%;
+}
+
+.wb span {
+    display: inline-block;
+    line-height: 2em;
+    float: left;
+}
+
+.douban {
+    width:100%;
+    margin-top:10px;
+    overflow: hidden;
+}
+
+.douban p {
     width: 100%;
-    margin:15px 3px;
-    text-align: center;
+    padding: 5px 15%;
 }
+
+.douban div {
+    width: 230px;
+    margin:0 auto;
+}
+
+/**
+ * -----------------
+ * 文章页专属
+ * -----------------
+ */
+
+#article-content {
+    min-height: 360px;
+    padding-top: 10px;
+    line-height: 1.8em;
+    /*letter-spacing: 0.05em;*/
+    font-size: 18px;
+}
+
+.article-name {
+    text-align: center;
+
+}
+
+#article-content p {
+    text-indent: 2em;
+}
+
+#article-content em {
+    display: inline;
+    font-style: normal;
+    background-color: #888;
+    color:white;
+    /*font-size: 0.8em;*/
+    text-align: left;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.article-date {
+    margin-top: 40px;
+    text-align: right;
+    color: #888;
+    font-size: 16px;
+}
+
+.share {
+    margin-top: 30px;
+    border-top: 1px solid #888888;
+    padding: 10px 0;
+}
+
+.share p {
+    float: left;
+}
+
