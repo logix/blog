@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 写在blog开始之前
+title: blog版本更新日志
 category: plan
 tags:
 - blog
