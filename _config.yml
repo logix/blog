@@ -5,6 +5,7 @@ highlighter: pygments #pygments: true
 
 name: Logix's Blog
 desc: 探寻开源的价值
+keyword: logix, blog, 博客, 开源, 技术, web工程师
 
 permalink: /:year/:month/:day/:title.html
 
