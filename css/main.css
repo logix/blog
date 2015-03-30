@@ -8,7 +8,8 @@ html {
     color: #222;
     font-family: Georgia,serif,Helvetica,Arial,sans-serif;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.5em;
+
     background-color: #fff;
     overflow-y: scroll;
     background-color: #f7f7f7;
@@ -111,6 +112,28 @@ footer {
 @-o-keyframes transopacity {
     0% {opacity: 0; left:-10px; top:0px;}
     100% {opcity: 1; left:0px; top:0px;}
+}
+
+#bulletin {
+    background-color: burlywood;
+    width: 80%;
+    padding: 10px 20px 10px 0px;
+    border-radius: 8px;
+    text-indent: 2em;
+}
+
+#bulletin p:before {
+    content:"“";
+    font-size: 2.8em;
+    color: #555;
+    float: left;
+    margin:15px auto;
+}
+
+#bulletin p:after {
+    content: "”";
+    color: #555;
+    clear: both;
 }
 
 nav{
