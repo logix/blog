@@ -28,9 +28,27 @@ p {
     /*text-indent: 2em;*/
 }
 
-a:hover {
-    color:#888888;
+blockquote {
+    padding: 5px 40px;
+    background-color: #fffee2;
+    border-radius: 12px;
+    font-size: 0.9em;
+    color: #666;
 }
+
+a {
+    color:#009999;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+a:hover {
+    color:#555555;
+}
+
+/*a:visited {*/
+    /*color:#009999;*/
+/*}*/
 
 header h1 {
     padding:10px;
