@@ -33,6 +33,10 @@ Swoole可以广泛应用于互联网、移动通信、企业软件、云计算�
 
 {% highlight php linenos %}
 <?php
+/**
+ * swoole 1.7.14 websocket 
+ * api sample
+ */
 $server = new swoole_websocket_server("0.0.0.0", 9502);
 $server->on('open', 
     function (swoole_websocket_server $server, swoole_http_request $req) {
