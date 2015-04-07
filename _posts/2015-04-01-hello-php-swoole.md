@@ -31,7 +31,7 @@ Swoole可以广泛应用于互联网、移动通信、企业软件、云计算�
 ### 4-3
 昨天阅读了一遍官方站点的文档，发现很多文档和新版本的api对不上，比如新加入的websocket，on和message的参数并不匹配，看来swoole的官方人手和开源流程还是相对薄落。参考了swoole的c源码后，调试通了websocket的api，以下是测试过的 1.7.14版本可以运行的api
 
-{% highlight php linenos %}
+{% highlight php %}
 <?php
 /**
  * swoole 1.7.14 websocket 

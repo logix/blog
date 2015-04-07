@@ -3,6 +3,7 @@
     line-height: 1.4em;
     letter-spacing: -0.01em;
     overflow-x: scroll;
+    padding: 0px 15px;
 }
 
 .highlight .lineno {
@@ -10,7 +11,7 @@
 }
 
 /* My Vim */
-.highlight  { background-color: #222;font }
+.highlight  { background-color: #222; }
 .highlight .c { color: #5534d8  } /* Comment */
 .highlight .err { color: #cccccc; border: 1px solid #FF0000 } /* Error */
 .highlight .g { color: #cccccc } /* Generic */

@@ -3,4 +3,5 @@ _site
 .DS_Store
 backcode_tmp
 .idea
+.idea/*
 *.swp
