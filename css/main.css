@@ -185,6 +185,22 @@ nav{
     border-radius: 5px;
 }
 
+.catetag {
+    min-width: 30px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    padding: 1px 5px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #0088cc;
+    border-radius: 5px;
+
+    color:#ffffff;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
 .ulbar li:hover {
     background-color: #888888;
 }

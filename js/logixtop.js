@@ -43,7 +43,7 @@ function createArticleList(obj, pageNum, pageFunc, keyword) {
         if(i < 0) i =0;
 
         document.getElementById("article_list").innerHTML +=
-            "<li>"+obj[i].date+" - <a href='"+obj[i].url+"' >"
+            "<li><span class='catetag'>"+ obj[i].categories +"</span>"+obj[i].date+" - <a href='"+obj[i].url+"' >"
             +obj[i].title+"</a></li>";
     }
 
