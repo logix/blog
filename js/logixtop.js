@@ -5,7 +5,10 @@
 
 
 //生成talk
-alert(talkdata.length);
+alert();
+var talknum = talkdata.length;
+document.getElementById("talkdata").innerHTML = "“"+talkdata[talknum-1][1]+"”";
+
 
 
 //生成文章列表
