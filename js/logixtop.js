@@ -4,6 +4,10 @@
 //        console.log(jo);
 
 
+//生成talk
+alert(talkdata.length);
+
+
 //生成文章列表
 createArticleList(jo.articles);
 
