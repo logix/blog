@@ -5,7 +5,6 @@
 
 
 //生成talk
-alert();
 var talknum = talkdata.length;
 document.getElementById("talkdata").innerHTML = "“"+talkdata[talknum-1][1]+"”";
 
