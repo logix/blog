@@ -42,13 +42,13 @@ title: Logix's blog
         var jsonTxt = '{ "articles" : [ '+
                 '{% for post in site.posts %} ' +
                 '{ "date":"{{ post.date | date_to_string }}" , "title":"{{ post.title }}" , ' +
-                '"url":"./{{ post.url }}" , ' +
+                '"url":"{{ site.baseurl }}{{ post.url }}" , ' +
                 '"tags":"{{ post.tags }}" , "categories":"{{ post.categories }}" }, ' +
                 '{% endfor %}'+
                 ']}';
         var jo = eval("(" + jsonTxt + ")");
     </script>
-    <script src="./js/logixtop.js"></script>
+    <script src="{{ site.baseurl }}/js/logixtop.js"></script>
 
 
 
@@ -58,7 +58,7 @@ title: Logix's blog
 
 <aside class="rightbox">
     <div class="myphoto">
-        <img src="./assets/author.jpeg"/>
+        <img src="{{ site.baseurl }}/assets/author.jpeg"/>
     </div>
     <div class="myintro">
         <h2>Logix</h2>
