@@ -1,4 +1,4 @@
-baseurl: http://www.logix.top
+baseurl: http://logix.github.io
 #safe: false
 #markdown: kramdown
 highlighter: pygments #pygments: true
