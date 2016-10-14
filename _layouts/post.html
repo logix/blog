@@ -4,8 +4,8 @@
     <title>{{ page.title }} - {{ site.name }}</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta name="description" content="{{ page.categories | array_to_sentence_string }},{{ page.tags | array_to_sentence_string }}" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/syntax.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/syntax.css" />
 </head>
 <body>
 
@@ -18,7 +18,7 @@
     </h2>
 </div>
 {{ content }}
-<div class="article-date"><a href="{{ site.baseurl }}">Logix</a> 写于 {{ page.date | date_to_string }}</div>
+<div class="article-date"><a href="./">Logix</a> 写于 {{ page.date | date_to_string }}</div>
 </article>
 
 <div class="share">
@@ -33,7 +33,7 @@
 <p>相关阅读：</p>
 <ul>
 {% for post in site.related_posts %}
-    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    <li><a href="./{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 
@@ -41,7 +41,7 @@
 <!--<ul  class="ds-top-threads" data-range="weekly" data-num-items="5"></ul>-->
 
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.baseurl }}{{ page.url }}"></div>
+<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="./{{ page.url }}"></div>
 <script type="text/javascript">
     var duoshuoQuery = {short_name:"logix"};
     (function() {
@@ -56,7 +56,7 @@
 </script>
 <!-- 多说评论框 end -->
 
-<a href="{{ site.baseurl }}">返回首页</a>
+<a href="./">返回首页</a>
 
 
 {% include footer.html %}
